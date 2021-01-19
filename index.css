@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.container{
+    background: linear-gradient(rgb(5, 164, 192),white);
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.5fr 3fr 0.5fr;
+    grid-template-rows: 1fr 0.05fr 0.5fr 3fr;
+    grid-template-areas: 
+    "garis garis garis"
+    "area1 header area2"
+    "area1 foto area2"
+    "area1 kalimat area2";
+    grid-gap: 0.2 rem;
+}
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    grid-area: header;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.garis{
+    grid-area: garis;
+    font-size: 30px;
+    background: white;
+    border: white;
+    margin: 3px 200px 0px 0px;
+    border-radius: 3px;
+    border-color: white;
+    display: inline-block;
+    width: 100%;
+    color: rgb(0, 132, 255);
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.foto{
+    grid-area: foto;
+    text-align: center;
+}
+.kalimat{
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    grid-area: kalimat;
+    z-index: 2;
+}
+.area1{
+    grid-area: area1;
+    background: rgba(0, 0, 0, 0.377);
+}
+.area2{
+    grid-area: area2;
+    background: rgba(0, 0, 0, 0.377);
+}
+.logo{
+    width: 50px;
+    position: fixed;
+    top: 50%;
+    right: 60px;
+}
+.tokopedia{
+    position: fixed;
+    left: 20px;
+}
+.jaket{
+    position: fixed;
+    top: 200px;
+    left: 15px;
+}
+.bag{
+    position: fixed;
+    top: 400px;
+    left: 15px;
+}
+.bubbles_img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+.bubbles_img:nth-child(1){
+    animation-delay: 2s;
+    width: 20px;
+}
+.bubbles_img:nth-child(2){
+    animation-delay: 1s;
+    width: 25px;
+}
+.bubbles_img:nth-child(3){
+    animation-delay: 3s;
+}
+.bubbles_img:nth-child(4){
+    animation-delay: 4.5s;
+}
+.bubbles_img:nth-child(5){
+    animation-delay: 3s;
+}
+.bubbles_img:nth-child(6){
+    animation-delay: 6s;
+    width: 30px;
+}
+.bubbles_img:nth-child(7){
+    animation-delay: 7s;
+    width: 35px;
+}
+
