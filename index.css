@@ -49,6 +49,8 @@ header{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     grid-area: kalimat;
     z-index: 2;
+    text-align: justify;
+    margin-right: 5px;
 }
 .area1{
     grid-area: area1;
@@ -66,11 +68,10 @@ header{
 }
 .tokopedia{
     position: fixed;
-    left: 20px;
 }
 .jaket{
     position: fixed;
-    top: 200px;
+    top: 220px;
     left: 15px;
 }
 .bag{
@@ -88,7 +89,7 @@ header{
     align-items: center;
     justify-content: space-around;
     position: absolute;
-    bottom: -70px;
+    bottom: -100px;
 }
 @keyframes bubble{
     0%{
